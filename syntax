@@ -1,3 +1,20 @@
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+        }
+    }
+}
+
+// namespaces group and organize code
+// using -> imports
+// static void -> first method; where program starts
+
 Console.WriteLine("Hello World!");
 
 Input:
@@ -17,6 +34,137 @@ Bill
 Maira
 Hello Maira
 Hello Maira
+
+I/P:
+
+int a = 18;
+int b = 6;
+int c = a + b;
+Console.WriteLine(c);
+
+// int a = 5;
+// int b = 4;
+// int c = 2;
+// int d = a + b * c;
+// Console.WriteLine(d);
+
+int a = 5;
+int b = 4;
+int c = 2;
+int d = (a + b) * c;
+Console.WriteLine(d);
+
+int d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+Console.WriteLine(d);
+
+I/P:
+
+//integer limits
+
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+int e = (a + b) % c;
+Console.WriteLine($"quotient: {d}");
+Console.WriteLine($"remainder: {e}");
+
+
+int max = int.MaxValue;
+int min = int.MinValue;
+Console.WriteLine($"The range of integers is {min} to {max}");
+
+int what = max + 1;
+// wraps around and becomes -min
+Console.WriteLine($"An example of overflow: {what}");
+
+// double a = 5;
+// double b = 4;
+// double c = 2;
+// double d = (a + b) / c;
+// Console.WriteLine(d);
+
+// double a = 19;
+// double b = 23;
+// double c = 8;
+// double d = (a + b) / c;
+// Console.WriteLine(d);
+
+double max = double.MaxValue;
+double min = double.MinValue;
+Console.WriteLine($"The range of double is {min} to {max}");
+
+double third = 1.0 / 3.0;
+Console.WriteLine(third);
+
+//The range of double is -1.79769313486232E+308 to 1.79769313486232E+308
+0.333333333333333
+
+
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+
+//The range of the decimal type is -79228162514264337593543950335 to 79228162514264337593543950335
+//0.333333333333333
+//0.3333333333333333333333333333
+
+I/P:
+
+//Conditionals
+
+int a = 5;
+int b = 6;
+if (a + b > 10)
+    Console.WriteLine("The answer is greater than 10.");
+    
+// if-else
+
+int a = 5;
+int b = 3;
+int c = 4;
+if ((a + b + c > 10) && (a == b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("And the first number is equal to the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("Or the first number is not equal to the second");
+}
+
+//while
+
+int counter = 0;
+while (counter < 10)
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+}
+
+int counter1 = 0;
+do
+{
+  Console.WriteLine($"Hello World! The counter is {counter1}");
+  counter1++;
+} while (counter1 < 10);
+
+
+
 
 
 
